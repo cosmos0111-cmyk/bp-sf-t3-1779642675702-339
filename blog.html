@@ -1,341 +1,342 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="bpaas-design-system" content="midnight-glass">
-    <meta name="bpaas-design-theme" content="kr-midnight-glass">
-    <title>LLM 비교 분석 마포 | 구글 상위노출 대행 블로그</title>
-    <meta name="description" content="마포 지역 LLM 비교 분석 기반 구글 상위노출 대행 서비스. 데이터 기반 전략으로 귀사의 디지털 가시성을 극대화합니다. 010-6279-0862로 문의하세요.">
-    <meta name="keywords" content="LLM 비교, 구글 상위노출 대행, 마포, 검색엔진 최적화, SEO 전문가, 디지털 마케팅">
-    <link rel="canonical" href="https://sf-t3-1779642675702-339.maphoshirts.today/blog.html">
-    <meta property="og:title" content="LLM 비교 분석 마포 | 구글 상위노출 대행 전문 서비스">
-    <meta property="og:description" content="데이터 기반 LLM 비교 전략으로 구글 상위노출을 실현합니다. 마포 지역 최고의 SEO 파트너.">
-    <style>
-        :root {
-            --bg-primary: #0a0e1a;
-            --bg-secondary: #111827;
-            --bg-card: #1a1f2e;
-            --text-primary: #e8edf5;
-            --text-secondary: #94a3b8;
-            --accent: #60a5fa;
-            --accent-hover: #3b82f6;
-            --border: #1e293b;
-            --glass: rgba(255,255,255,0.03);
-            --shadow: 0 4px 20px rgba(0,0,0,0.3);
-            --radius: 12px;
-            --transition: 0.3s ease;
-        }
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            background: var(--bg-primary);
-            color: var(--text-primary);
-            line-height: 1.7;
-            -webkit-font-smoothing: antialiased;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        header {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background: rgba(10,14,26,0.85);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            border-bottom: 1px solid var(--border);
-            z-index: 1000;
-        }
-        .header-inner {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: 72px;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-            letter-spacing: -0.02em;
-            background: linear-gradient(135deg, #60a5fa, #a78bfa);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        .logo span {
-            font-weight: 300;
-            -webkit-text-fill-color: var(--text-secondary);
-        }
-        nav {
-            display: flex;
-            gap: 32px;
-        }
-        nav a {
-            color: var(--text-secondary);
-            text-decoration: none;
-            font-size: 0.95rem;
-            font-weight: 500;
-            transition: color var(--transition);
-            position: relative;
-        }
-        nav a:hover {
-            color: var(--accent);
-        }
-        nav a::after {
-            content: '';
-            position: absolute;
-            bottom: -4px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: var(--accent);
-            transition: width var(--transition);
-        }
-        nav a:hover::after {
-            width: 100%;
-        }
-        .hamburger {
-            display: none;
-            flex-direction: column;
-            gap: 5px;
-            cursor: pointer;
-            background: none;
-            border: none;
-            padding: 8px;
-        }
-        .hamburger span {
-            width: 28px;
-            height: 2px;
-            background: var(--text-primary);
-            transition: all 0.3s ease;
-            display: block;
-        }
-        .mobile-nav {
-            display: none;
-            position: fixed;
-            top: 72px;
-            left: 0;
-            width: 100%;
-            background: var(--bg-secondary);
-            border-bottom: 1px solid var(--border);
-            padding: 20px;
-            flex-direction: column;
-            gap: 16px;
-            z-index: 999;
-        }
-        .mobile-nav a {
-            color: var(--text-secondary);
-            text-decoration: none;
-            font-size: 1.1rem;
-            padding: 8px 0;
-            border-bottom: 1px solid var(--border);
-        }
-        .mobile-nav a:last-child {
-            border-bottom: none;
-        }
-        .hero {
-            padding: 140px 0 80px;
-            text-align: center;
-            background: linear-gradient(180deg, rgba(96,165,250,0.08) 0%, transparent 100%);
-        }
-        .hero h1 {
-            font-size: 2.8rem;
-            font-weight: 700;
-            letter-spacing: -0.03em;
-            margin-bottom: 20px;
-            background: linear-gradient(135deg, #e8edf5, #60a5fa);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        .hero p {
-            font-size: 1.15rem;
-            color: var(--text-secondary);
-            max-width: 680px;
-            margin: 0 auto 32px;
-        }
-        .blog-post {
-            padding: 60px 0 100px;
-        }
-        .blog-post .meta {
-            display: flex;
-            gap: 16px;
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-            margin-bottom: 40px;
-            padding-bottom: 20px;
-            border-bottom: 1px solid var(--border);
-        }
-        .blog-post .meta span {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
-        .blog-post h2 {
-            font-size: 1.8rem;
-            margin: 48px 0 20px;
-            color: var(--accent);
-            letter-spacing: -0.02em;
-        }
-        .blog-post h3 {
-            font-size: 1.3rem;
-            margin: 32px 0 16px;
-            color: var(--text-primary);
-        }
-        .blog-post p {
-            font-size: 1.05rem;
-            color: var(--text-secondary);
-            margin-bottom: 20px;
-            max-width: 780px;
-        }
-        .blog-post .highlight-box {
-            background: var(--bg-card);
-            border-left: 4px solid var(--accent);
-            padding: 24px 28px;
-            margin: 32px 0;
-            border-radius: 0 var(--radius) var(--radius) 0;
-        }
-        .blog-post .highlight-box p {
-            margin-bottom: 0;
-            color: var(--text-primary);
-            font-weight: 500;
-        }
-        .blog-post ul {
-            list-style: none;
-            padding: 0;
-            margin: 24px 0 32px;
-            max-width: 780px;
-        }
-        .blog-post ul li {
-            color: var(--text-secondary);
-            padding: 10px 0 10px 28px;
-            position: relative;
-            border-bottom: 1px solid rgba(255,255,255,0.04);
-        }
-        .blog-post ul li::before {
-            content: '▹';
-            position: absolute;
-            left: 0;
-            color: var(--accent);
-        }
-        .blog-post .data-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 32px 0;
-            background: var(--bg-card);
-            border-radius: var(--radius);
-            overflow: hidden;
-        }
-        .blog-post .data-table th {
-            background: var(--bg-secondary);
-            color: var(--accent);
-            padding: 14px 20px;
-            text-align: left;
-            font-weight: 600;
-            font-size: 0.95rem;
-        }
-        .blog-post .data-table td {
-            padding: 14px 20px;
-            color: var(--text-secondary);
-            border-bottom: 1px solid var(--border);
-            font-size: 0.95rem;
-        }
-        .blog-post .data-table tr:last-child td {
-            border-bottom: none;
-        }
-        .cta-section {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: var(--radius);
-            padding: 48px;
-            margin: 60px 0 40px;
-            text-align: center;
-        }
-        .cta-section h3 {
-            font-size: 1.6rem;
-            margin-bottom: 16px;
-            color: var(--text-primary);
-        }
-        .cta-section p {
-            color: var(--text-secondary);
-            margin-bottom: 24px;
-            font-size: 1.05rem;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .cta-section a {
-            display: inline-block;
-            background: var(--accent);
-            color: #0a0e1a;
-            padding: 14px 40px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1.05rem;
-            transition: all var(--transition);
-        }
-        .cta-section a:hover {
-            background: var(--accent-hover);
-            transform: translateY(-2px);
-            box-shadow: 0 8px 30px rgba(96,165,250,0.3);
-        }
-        footer {
-            border-top: 1px solid var(--border);
-            padding: 40px 0;
-            text-align: center;
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-        }
-        @media (max-width: 768px) {
-            .hero h1 { font-size: 2rem; }
-            .hero p { font-size: 1rem; }
-            .blog-post h2 { font-size: 1.4rem; }
-            .blog-post h3 { font-size: 1.15rem; }
-            .blog-post p { font-size: 0.95rem; }
-            nav { display: none; }
-            .hamburger { display: flex; }
-            .mobile-nav.active { display: flex; }
-            .cta-section { padding: 32px 20px; }
-            .cta-section h3 { font-size: 1.3rem; }
-            .blog-post .data-table { font-size: 0.85rem; }
-            .blog-post .data-table th,
-            .blog-post .data-table td { padding: 10px 12px; }
-        }
-    </style>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>LLM 비교 분석 마포 | 구글 상위노출 대행 블로그</title>
+ <meta name="description" content="마포 지역 LLM 비교 분석 기반 구글 상위노출 대행 서비스. 데이터 기반 전략으로 귀사의 디지털 가시성을 극대화합니다.">
+ <meta name="keywords" content="LLM 비교, 구글 상위노출 대행, 마포, 검색엔진 최적화, SEO 전문가, 디지털 마케팅">
+ <link rel="canonical" href="https://sf-t3-1779642675702-339.maphoshirts.today/blog.html">
+ <meta property="og:title" content="LLM 비교 분석 마포 | 구글 상위노출 대행 블로그">
+ <meta property="og:description" content="마포 지역 LLM 비교 분석 기반 구글 상위노출 대행 서비스. 데이터 기반 전략으로 귀사의 디지털 가시성을 극대화합니다.">
+ <style>
+ :root {
+ --bg-primary: #0a0e1a;
+ --bg-secondary: #111827;
+ --bg-card: #1a1f2e;
+ --text-primary: #e8edf5;
+ --text-secondary: #94a3b8;
+ --accent: #60a5fa;
+ --accent-hover: #3b82f6;
+ --border: #1e293b;
+ --glass: rgba(255,255,255,0.03);
+ --shadow: 0 4px 20px rgba(0,0,0,0.3);
+ --radius: 12px;
+ --transition: 0.3s ease;
+ }
+ * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+ body {
+ font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+ background: var(--bg-primary);
+ color: var(--text-primary);
+ line-height: 1.7;
+ -webkit-font-smoothing: antialiased;
+ }
+ .container {
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 0 20px;
+ }
+ header {
+ position: fixed;
+ top: 0;
+ width: 100%;
+ background: rgba(10,14,26,0.85);
+ backdrop-filter: blur(20px);
+ -webkit-backdrop-filter: blur(20px);
+ border-bottom: 1px solid var(--border);
+ z-index: 1000;
+ }
+ .header-inner {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ height: 72px;
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 0 20px;
+ }
+ .logo {
+ font-size: 1.5rem;
+ font-weight: 700;
+ letter-spacing: -0.02em;
+ background: linear-gradient(135deg, #60a5fa, #a78bfa);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ background-clip: text;
+ }
+ .logo span {
+ font-weight: 300;
+ -webkit-text-fill-color: var(--text-secondary);
+ }
+ nav {
+ display: flex;
+ gap: 32px;
+ }
+ nav a {
+ color: var(--text-secondary);
+ text-decoration: none;
+ font-size: 0.95rem;
+ font-weight: 500;
+ transition: color var(--transition);
+ position: relative;
+ }
+ nav a:hover {
+ color: var(--accent);
+ }
+ nav a::after {
+ content: '';
+ position: absolute;
+ bottom: -4px;
+ left: 0;
+ width: 0;
+ height: 2px;
+ background: var(--accent);
+ transition: width var(--transition);
+ }
+ nav a:hover::after {
+ width: 100%;
+ }
+ .hamburger {
+ display: none;
+ flex-direction: column;
+ gap: 5px;
+ cursor: pointer;
+ background: none;
+ border: none;
+ padding: 8px;
+ }
+ .hamburger span {
+ width: 28px;
+ height: 2px;
+ background: var(--text-primary);
+ transition: all 0.3s ease;
+ display: block;
+ }
+ .mobile-nav {
+ display: none;
+ position: fixed;
+ top: 72px;
+ left: 0;
+ width: 100%;
+ background: var(--bg-secondary);
+ border-bottom: 1px solid var(--border);
+ padding: 20px;
+ flex-direction: column;
+ gap: 16px;
+ z-index: 999;
+ }
+ .mobile-nav a {
+ color: var(--text-secondary);
+ text-decoration: none;
+ font-size: 1.1rem;
+ padding: 8px 0;
+ border-bottom: 1px solid var(--border);
+ }
+ .mobile-nav a:last-child {
+ border-bottom: none;
+ }
+ .hero {
+ padding: 140px 0 80px;
+ text-align: center;
+ background: linear-gradient(180deg, rgba(96,165,250,0.08) 0%, transparent 100%);
+ }
+ .hero h1 {
+ font-size: 2.8rem;
+ font-weight: 700;
+ letter-spacing: -0.03em;
+ margin-bottom: 20px;
+ background: linear-gradient(135deg, #e8edf5, #60a5fa);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ background-clip: text;
+ }
+ .hero p {
+ font-size: 1.15rem;
+ color: var(--text-secondary);
+ max-width: 680px;
+ margin: 0 auto 32px;
+ }
+ .blog-post {
+ padding: 60px 0 100px;
+ }
+ .blog-post .meta {
+ display: flex;
+ gap: 16px;
+ color: var(--text-secondary);
+ font-size: 0.9rem;
+ margin-bottom: 40px;
+ padding-bottom: 20px;
+ border-bottom: 1px solid var(--border);
+ }
+ .blog-post .meta span {
+ display: flex;
+ align-items: center;
+ gap: 6px;
+ }
+ .blog-post h2 {
+ font-size: 1.8rem;
+ margin: 48px 0 20px;
+ color: var(--accent);
+ letter-spacing: -0.02em;
+ }
+ .blog-post h3 {
+ font-size: 1.3rem;
+ margin: 32px 0 16px;
+ color: var(--text-primary);
+ }
+ .blog-post p {
+ font-size: 1.05rem;
+ color: var(--text-secondary);
+ margin-bottom: 20px;
+ max-width: 780px;
+ }
+ .blog-post .highlight-box {
+ background: var(--bg-card);
+ border-left: 4px solid var(--accent);
+ padding: 24px 28px;
+ margin: 32px 0;
+ border-radius: 0 var(--radius) var(--radius) 0;
+ }
+ .blog-post .highlight-box p {
+ margin-bottom: 0;
+ color: var(--text-primary);
+ font-weight: 500;
+ }
+ .blog-post ul {
+ list-style: none;
+ padding: 0;
+ margin: 24px 0 32px;
+ max-width: 780px;
+ }
+ .blog-post ul li {
+ color: var(--text-secondary);
+ padding: 10px 0 10px 28px;
+ position: relative;
+ border-bottom: 1px solid rgba(255,255,255,0.04);
+ }
+ .blog-post ul li::before {
+ content: '▹';
+ position: absolute;
+ left: 0;
+ color: var(--accent);
+ }
+ .blog-post .data-table {
+ width: 100%;
+ border-collapse: collapse;
+ margin: 32px 0;
+ background: var(--bg-card);
+ border-radius: var(--radius);
+ overflow: hidden;
+ }
+ .blog-post .data-table th {
+ background: var(--bg-secondary);
+ color: var(--accent);
+ padding: 14px 20px;
+ text-align: left;
+ font-weight: 600;
+ font-size: 0.95rem;
+ }
+ .blog-post .data-table td {
+ padding: 14px 20px;
+ color: var(--text-secondary);
+ border-bottom: 1px solid var(--border);
+ font-size: 0.95rem;
+ }
+ .blog-post .data-table tr:last-child td {
+ border-bottom: none;
+ }
+ .cta-section {
+ background: var(--bg-card);
+ border: 1px solid var(--border);
+ border-radius: var(--radius);
+ padding: 48px;
+ margin: 60px 0 40px;
+ text-align: center;
+ }
+ .cta-section h3 {
+ font-size: 1.6rem;
+ margin-bottom: 16px;
+ color: var(--text-primary);
+ }
+ .cta-section p {
+ color: var(--text-secondary);
+ margin-bottom: 24px;
+ font-size: 1.05rem;
+ max-width: 600px;
+ margin-left: auto;
+ margin-right: auto;
+ }
+ .cta-section a {
+ display: inline-block;
+ background: var(--accent);
+ color: #0a0e1a;
+ padding: 14px 40px;
+ border-radius: 50px;
+ text-decoration: none;
+ font-weight: 600;
+ font-size: 1.05rem;
+ transition: all var(--transition);
+ }
+ .cta-section a:hover {
+ background: var(--accent-hover);
+ transform: translateY(-2px);
+ box-shadow: 0 8px 30px rgba(96,165,250,0.3);
+ }
+ footer {
+ border-top: 1px solid var(--border);
+ padding: 40px 0;
+ text-align: center;
+ color: var(--text-secondary);
+ font-size: 0.9rem;
+ }
+ @media (max-width: 768px) {
+ .hero h1 { font-size: 2rem; }
+ .hero p { font-size: 1rem; }
+ .blog-post h2 { font-size: 1.4rem; }
+ .blog-post h3 { font-size: 1.15rem; }
+ .blog-post p { font-size: 0.95rem; }
+ nav { display: none; }
+ .hamburger { display: flex; }
+ .mobile-nav.active { display: flex; }
+ .cta-section { padding: 32px 20px; }
+ .cta-section h3 { font-size: 1.3rem; }
+ .blog-post .data-table { font-size: 0.85rem; }
+ .blog-post .data-table th,
+ .blog-post .data-table td { padding: 10px 12px; }
+ }
+ </style>
+  <meta property="og:url" content="https://sf-t3-1779642675702-339.maphoshirts.today/blog.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
 </head>
 <body>
-    <header>
-        <div class="header-inner">
-            <div class="logo">LLM<span>비교</span></div>
-            <nav>
-                <a href="/">홈</a>
-                <a href="/about">서비스</a>
-                <a href="/blog">블로그</a>
-                <a href="/contact">문의</a>
-            </nav>
-            <button class="hamburger" onclick="this.classList.toggle('active'); document.querySelector('.mobile-nav').classList.toggle('active')">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-        <div class="mobile-nav">
-            <a href="/">홈</a>
-            <a href="/about">서비스</a>
-            <a href="/blog">블로그</a>
-            <a href="/contact">문의</a>
-        </div>
-    </header>
+ <header>
+ <div class="header-inner">
+ <div class="logo">LLM<span>비교</span></div>
+ <nav>
+ <a href="/">홈</a>
+ <a href="/about">서비스</a>
+ <a href="/blog">블로그</a>
+ <a href="/contact">문의</a>
+ </nav>
+ <button class="hamburger" onclick="this.classList.toggle('active'); document.querySelector('.mobile-nav').classList.toggle('active')">
+ 
+ 
+ 
+ </button>
+ </div>
+ <div class="mobile-nav">
+ <a href="/">홈</a>
+ <a href="/about">서비스</a>
+ <a href="/blog">블로그</a>
+ <a href="/contact">문의</a>
+ </div>
+ </header>
 
 <main class="container">
 <section class="hero">
